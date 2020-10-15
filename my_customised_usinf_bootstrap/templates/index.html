@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+
+<div class="container mt-5">
+  <h2 class='display-3'>Select File</h2>
+  <form name='frm' method='POST' action="{{url_for('predict')}}" enctype='multipart/form-data'>
+    
+    <div class="form-group">
+
+      	<div class="custom-file my-3">
+    		<input type="file" name="select_file">
+		</div>
+
+    </div>
+    
+    <input type="submit" name="btn" class='btn btn-primary'>
+  </form>
+</div>
+
+
+{%endblock%}
